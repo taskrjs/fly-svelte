@@ -1,3 +1,5 @@
+'use strict';
+
 const parse = require('path').parse;
 const format = require('path').format;
 const extname = require('path').extname;
