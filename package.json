@@ -14,8 +14,7 @@
     "svelte"
   ],
   "scripts": {
-    "deploy": "npm test && git push origin master && npm publish",
-    "test": "./node_modules/tape/bin/tape test/*.js | tap-spec"
+    "test": "tape test/*.js | tap-spec"
   },
   "author": {
     "name": "Luke Edwards",
@@ -25,16 +24,9 @@
   "dependencies": {},
   "devDependencies": {
     "tap-spec": "^4.1.1",
-    "tape": "^4.2.2",
-    "xo": "*"
-  },   
+    "tape": "^4.2.2"
+  },
   "engines": {
     "node": ">= 4.6"
-  },
-  "xo": {
-    "semicolon": false,
-    "ignore": [
-      "test/*.js"
-    ]
   }
 }
